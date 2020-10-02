@@ -12,7 +12,7 @@ export const startLogin = (email, password) => {
       localStorage.setItem('token-init-date', new Date().getTime());
       dispatch(login({ uid: body.uid, name: body.name }));
     }else{
-        Swal.fire('Error', body.msg, 'Error')
+        Swal.fire('Error', body.msg, 'error')
     }
   };
 };
@@ -26,7 +26,7 @@ export const startRegister = (email, password, name) => {
       localStorage.setItem('token-init-date', new Date().getTime());
       dispatch(login({ uid: body.uid, name: body.name }));
     }else{
-        Swal.fire('Error', body.msg, 'Error')
+        Swal.fire('Error', body.msg, 'error')
     }
   }
 }

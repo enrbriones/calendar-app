@@ -7,8 +7,8 @@ import Swal from 'sweetalert2';
 
 export const LoginScreen = () => {
   const [formLoginValues, handleLoginInputChange] = useForm({
-    lEmail: 'test3@test.com',
-    lPassword: '123456',
+    lEmail: '',
+    lPassword: '',
   });
   const { lEmail, lPassword } = formLoginValues;
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ export const LoginScreen = () => {
   const [formRegisterValues, handleRegisterInputChange] = useForm({
     rName: 'Nando',
     rEmail: 'nando@test.com',
-    rPassword1: '123456',
-    rPassword2: '123456',
+    rPassword1: '',
+    rPassword2: '',
   });
   const { rName, rEmail, rPassword1, rPassword2 } = formRegisterValues;
 
